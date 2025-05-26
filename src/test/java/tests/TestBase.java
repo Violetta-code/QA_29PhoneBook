@@ -1,20 +1,41 @@
 package tests;
 
-import manager.AppllicationManager;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import manager.ApplicationManager;
+import manager.TestNGListener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.*;
+
+import java.lang.reflect.Method;
+
+
+@Listeners(TestNGListener.class)
 
 public class TestBase {
 
-   static AppllicationManager app=new AppllicationManager();
+   Logger logger = LoggerFactory.getLogger(TestBase.class);
+
+   static ApplicationManager app = new ApplicationManager();
+
+
+   @BeforeMethod
+   public void startLogger(Method m){
+      logger.info("Name of method -->" + m.getName());
+   }
+
+   @AfterMethod
+   public void end(){
+      logger.info("=================================================================");
+   }
+
 
    @BeforeSuite
-   public void setApp(){
-       app.init();
+   public void setUp() {
+      app.init();
    }
 
    @AfterSuite
-   public void tearDown(){
+   public void tearDown() {
       // app.stop();
    }
 }
