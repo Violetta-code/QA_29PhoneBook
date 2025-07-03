@@ -1,0 +1,31 @@
+18:18:24.834 INFO  manager.ApplicationManager - All tests runs in Chrome Browser
+18:18:25.418 INFO  manager.WDListener - Url-->https://telranedu.web.app
+18:18:25.783 INFO  manager.WDListener - Huston we have a problem!
+18:18:25.785 INFO  manager.WDListener - Object target --> ChromeDriver: chrome on windows (0a19a18f9e63df3fbc0d55585f338ca4)
+18:18:25.785 INFO  manager.WDListener - ******************
+18:18:25.787 INFO  manager.WDListener - Method name -->getCurrentUrl
+18:18:25.789 INFO  manager.WDListener - ******************
+18:18:25.794 INFO  manager.WDListener - InvocationTargetExceptionorg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a19a18f9e63df3fbc0d55585f338ca4, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53162/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a19a18f9e63df3fbc0d55585f338ca4
+18:18:25.797 INFO  manager.WDListener - ******************
+18:18:25.854 INFO  manager.TestNGListener - Start testing on date -->Thu Jun 12 18:18:25 IDT 2025
+18:18:25.902 INFO  tests.TestBase - Name of method -->loginSuccessModel
+18:18:25.918 INFO  manager.TestNGListener - start test -->loginSuccessModel
+18:18:25.918 INFO  manager.TestNGListener - skipped test -->loginSuccessModel
+18:18:25.921 INFO  tests.TestBase - =================================================================
+18:18:25.923 INFO  tests.TestBase - Name of method -->loginSuccessModel
+18:18:25.927 INFO  manager.TestNGListener - start test -->loginSuccessModel
+18:18:25.927 INFO  manager.TestNGListener - skipped test -->loginSuccessModel
+18:18:25.927 INFO  tests.TestBase - =================================================================
+18:18:25.929 INFO  tests.TestBase - Name of method -->loginSuccessModel
+18:18:25.931 INFO  manager.TestNGListener - start test -->loginSuccessModel
+18:18:25.932 INFO  manager.TestNGListener - skipped test -->loginSuccessModel
+18:18:25.934 INFO  tests.TestBase - =================================================================
+18:18:25.936 INFO  manager.TestNGListener - Finish testing on date -->Thu Jun 12 18:18:25 IDT 2025

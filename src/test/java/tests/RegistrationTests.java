@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class RegistrationTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         //if Sign Out present ---> logout
         if(app.getHelperUser().isLogged()){
@@ -17,7 +17,7 @@ public class RegistrationTests extends TestBase{
         }
     }
 
-    @Test
+    @Test (groups = {"smoke"})
     public void registrationSuccess(){
         int i = new Random().nextInt(1000)+1001;
         User user = new User().withEmail("don"+i+"@gmail.com").withPassword("Ddon12345$");
@@ -56,7 +56,7 @@ public class RegistrationTests extends TestBase{
 
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void registrationExistsUser() {
         User user = new User().withEmail("margo@gmail.com").withPassword("Mmar123456$");
 
